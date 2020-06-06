@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <!--FONT-AWESOME-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--BOOTSwatch-->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-qdQEsAI45WFCO5QwXBelBe1rR9Nwiss4rGEqiszC+9olH1ScrLrMQr1KmDR964uZ" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/public/img/imgshare-logo.png" alt="imgshare">
+            </a>
+        </div>
+    </nav>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8">
+                {{{ body }}}
+            </div>
+            <div class="col-md-4">
+                {{>stats}}
+                {{>popular}}
+                {{>comments}}
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- scripts-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+  <!--Custom Code -->
+  <script src="/public/js/scripts.js"></script>
+    
+</body>
+</html>
